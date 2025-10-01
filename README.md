@@ -74,4 +74,13 @@ hydra -l admin -P wordlists/senhas.txt 192.168.56.102 http-post-form "/dvwa/vuln
 | **E-mail** | `f2suporte@gmail.com` |
 
 
-
+/
+├── README.md
+├── wordlists/
+│   ├── senhas.txt
+│   └── users.txt
+└── images/
+    ├── 1-ftp-nmap.png
+    ├── 2-ftp-medusa.png
+    ├── 3-ftp-login-success.png
+    └── 4-mitigacao.png
