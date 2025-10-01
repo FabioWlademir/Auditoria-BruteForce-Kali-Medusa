@@ -1,4 +1,4 @@
-# 🛡️ DIO-BruteForce-Medusa-Lab: Simulação de Ataque de Força Bruta
+# 🛡️ BruteForce-Medusa-Lab: Simulação de Ataque de Força Bruta
 
 Este projeto é a implementação prática do desafio de segurança ofensiva da **DIO (Digital Innovation One)**. O foco é a utilização do **Kali Linux** e das ferramentas **Medusa/Hydra** para simular ataques de força bruta em um ambiente controlado (Metasploitable 2), documentando o processo e propondo medidas de mitigação eficazes.
 
