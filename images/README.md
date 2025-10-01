@@ -17,5 +17,6 @@ Esta pasta contém as evidências visuais (**capturas de tela**) que validam a e
 ### 3. `3-ftp-login-success.png`
 
 **Descrição:** Validação do ataque. Demonstra o login bem-sucedido no servidor FTP (`ftp <IP>`) utilizando as credenciais descobertas pelo Medusa. O login com sucesso confirma a vulnerabilidade explorada.
-![Uploading 3-ftp-login-success.png…]()
+<img width="1024" height="1024" alt="3-ftp-login-success" src="https://github.com/user-attachments/assets/a2199ec3-97d8-477f-b7a6-8bc42f0587d5" />
+
 
