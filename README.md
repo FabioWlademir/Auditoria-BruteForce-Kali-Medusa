@@ -105,3 +105,7 @@ A documentação clara e a proposta de mitigação são tão vitais quanto a exe
     ├── 2-ftp-medusa.png
     ├── 3-ftp-login-success.png
     └── 4-mitigacao.png
+
+    
+📸 Evidências dos Testes de Força Bruta
+https://github.com/FabioWlademir/Auditoria-BruteForce-Kali-Medusa/blob/main/images/README.md
