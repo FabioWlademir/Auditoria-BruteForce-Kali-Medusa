@@ -63,6 +63,27 @@ Simulação de quebra de login no formulário **Brute Force** do DVWA. A ferrame
 ```bash
 hydra -l admin -P wordlists/senhas.txt 192.168.56.102 http-post-form "/dvwa/vulnerabilities/brute/?username=^USER^&password=^PASS^&Login=Login:H=Location: /dvwa/vulnerabilities/brute/" -V -f
 ```
+💡 Análise de Vulnerabilidades e Mitigação
+A documentação do ataque é apenas o primeiro passo. A lição mais importante é saber como prevenir que isso ocorra em ambientes reais.
+
+Serviço Vulnerável	Vulnerabilidade Principal	Recomendação de Mitigação
+FTP e SMB	Uso de Credenciais Padrão/Fracas	Política de Senhas Fortes: Exigir comprimento mínimo (ex: 12 caracteres), complexidade (maiúsculas, minúsculas, números, símbolos).
+FTP e SMB	Ausência de limite de tentativas	Rate Limiting e Bloqueio de Conta: Configurar o serviço para bloquear o IP ou a conta após 3 a 5 tentativas falhas em um curto período.
+Formulário Web (DVWA)	Falha na proteção de Login	CAPTCHA ou Google reCAPTCHA: Implementar um mecanismo que dificulte a automação por bots. Tokens Anti-CSRF: Garantir que o formulário não seja facilmente replicável.
+Geral	Visibilidade dos Serviços	Segurança por Profundidade: Limitar o acesso a serviços internos (FTP/SMB) apenas a IPs de confiança (ACLs ou Firewalls).
+
+🔗 Próximos Passos e Reflexões
+Este laboratório reforçou a importância de configurações de segurança default. O ataque de força bruta só foi possível devido a: 1) Senhas previsíveis (msfadmin:msfadmin), e 2) A ausência de limitação de tentativas de login.
+
+Para aprimorar o aprendizado, os próximos passos seriam:
+
+Ajustar o Nível de Segurança do DVWA para Medium e High e tentar automatizar os ataques, explorando a necessidade de manipular tokens e cookies de sessão.
+
+**Utilizar o Nmap Scripting Engine (NSE) para identificar credenciais padrão em serviços.
+
+Explorar o módulo telnet do Medusa no Metasploitable 2.
+
+A documentação clara e a proposta de mitigação são tão vitais quanto a execução técnica do ataque.
 
 
 | Plataforma | Link |
